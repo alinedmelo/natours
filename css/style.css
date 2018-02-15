@@ -52,6 +52,7 @@ body {
     line-height: 1.5em;
     font-weight: 400;
     letter-spacing: 35px;
+    animation: fadeLeft .7s ease-out;
 }
 
 .sub-text {
@@ -60,4 +61,32 @@ body {
     line-height: 1.5em;
     font-weight: 700;
     letter-spacing: 17.4px;
+    animation: fadeRight .7s ease-out;
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    80% {
+        transform: translateX(-1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
 }
