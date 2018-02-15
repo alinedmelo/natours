@@ -7,9 +7,10 @@ Dark green: #28b485
 
 */
 body {
-    padding: 30px;
+    padding: 20px;
 }
 .header {
+    position: relative;
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
@@ -19,4 +20,12 @@ body {
         background-size: cover;
         background-position: top;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.logo-box {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.logo {
+    width: 80px;
 }
