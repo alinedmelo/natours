@@ -9,6 +9,7 @@ Dark green: #28b485
 body {
     padding: 20px;
 }
+
 .header {
     position: relative;
     height: 95vh;
@@ -21,11 +22,42 @@ body {
         background-position: top;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
+
 .logo-box {
     position: absolute;
     top: 30px;
     left: 30px;
 }
+
 .logo {
     width: 80px;
+}
+
+.text-box {
+    /* position/top/left - relative to the parent */
+    position: absolute;
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Relative to element itself */
+}
+
+.hero-text {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-text {
+    display: block;
+    font-size: 60px;
+    line-height: 1.5em;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.sub-text {
+    display: block;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 700;
+    letter-spacing: 17.4px;
 }
