@@ -13,7 +13,6 @@ https://alinedmelo.github.io/natours/
 2. User - CSS of the user device (when the user changes the font-size of the bowser, for example)
 3. Brownser (user agent) - the default styleshhet of the browser
 
-
 **Importance > specificity > source order**
 
 ##### Importance
