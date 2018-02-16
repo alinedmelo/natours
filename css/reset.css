@@ -6,22 +6,34 @@
     padding: 0;
     box-sizing: inherit;
 }
+
+html {
+    font-size: 62.5%;
+}
+
 body {
+    padding: 2rem;
+    line-height: 1.3rem;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #777;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
