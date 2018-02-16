@@ -6,6 +6,53 @@ $contrast: #fff;
 
 $alpha: .7;
 
+/* Animations */
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    80% {
+        transform: translateX(-1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes fadeBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}
+
+.fade {
+    &-right {
+        animation: fadeRight 1s ease-out;
+    }
+    &-left {
+        animation: fadeLeft 1s ease-out;
+    }
+}
 .header {
     position: relative;
     height: 95vh;
@@ -49,14 +96,12 @@ $alpha: .7;
             font-size: 6rem;
             font-weight: 400;
             letter-spacing: 3.5rem;
-            animation: fadeLeft 1s ease-out;
         }
 
         &-sub {
             font-size: 2rem;
             font-weight: 700;
             letter-spacing: 1.7rem;
-            animation: fadeRight 1s ease-out;
         }
     }
 }
@@ -85,12 +130,7 @@ $alpha: .7;
         transition: all .2s ease-out;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     }
-
-    &-white {
-        background-color: $contrast;
-        color: #777;
-    }
-    
+  
     &::after {
         content: '';
         display: inline-block;
@@ -103,57 +143,23 @@ $alpha: .7;
         z-index: -1;
         transition: all .3s ease-in;
     }
+
+    &:hover::after {
+        transform: scale(1.2, 1.4);
+        opacity: 0;
+    }
+
+    &-white {
+        background-color: $contrast;
+        color: #777;
+    }
     
     &-white::after {
         background-color: $contrast;
     }
     
-    &:hover::after {
-        transform: scale(1.2, 1.4);
-        opacity: 0;
-    }
-    
     &-animated {
         animation: fadeBottom .5s ease-out .7s;
         animation-fill-mode: backwards;
-    }
-}
-
-/* Animations */
-@keyframes fadeLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10%);
-    }
-    80% {
-        transform: translateX(1%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%)
-    }
-}
-@keyframes fadeRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10%);
-    }
-    80% {
-        transform: translateX(-1%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%)
-    }
-}
-
-@keyframes fadeBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(25%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%)
     }
 }
