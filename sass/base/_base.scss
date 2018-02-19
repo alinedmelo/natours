@@ -1,4 +1,4 @@
-/* reset css */
+/* RESET CSS */
 *, 
 *::before,
 *::after {
@@ -8,16 +8,8 @@
 }
 
 html {
+    // defines 1rem size setting
     font-size: 62.5%;
-}
-
-body {
-    padding: 2rem;
-    line-height: 1.3rem;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #777;
 }
 
 ol, ul {

@@ -1,0 +1,29 @@
+.hero-heading {
+    // position/top/left - relative to the parent
+    position: absolute;
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); // Relative to element itself
+    text-align: center;
+    font-size: 15px;
+
+    .text {
+        display: block;
+        line-height: 1.5em;
+        margin-bottom: 5rem;
+        color: $contrast;
+        text-transform: uppercase;
+
+        &-main {
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+        }
+
+        &-sub {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.7rem;
+        }
+    }
+}

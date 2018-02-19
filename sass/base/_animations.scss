@@ -1,0 +1,49 @@
+/* Animations */
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    80% {
+        transform: translateX(-1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes fadeBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}
+
+.fade {
+    &-right {
+        display: inline-block;
+        animation: fadeRight 1s ease-out;
+    }
+    &-left {
+        display: inline-block;
+        animation: fadeLeft 1s ease-out;
+    }
+}
