@@ -1,3 +1,6 @@
+/* Spacing */
+/* Colors */
+/* GRID */
 /* RESET CSS */
 *,
 *::before,
@@ -86,6 +89,36 @@ body {
       .header .logo-box .logo:hover {
         transform: scale(1.1);
         transition: all .4s ease-out; }
+
+.row {
+  width: 100%;
+  margin: 6rem 0; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class^='col-'] {
+    float: left;
+    padding: 3rem;
+    background-color: #eee; }
+    .row [class^='col-']:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-1 {
+    width: 100%; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .hero-heading {
   position: absolute;
