@@ -30,7 +30,7 @@ $alpha: .7;
     }
     100% {
         opacity: 1;
-        transform: translateX(0%)
+        transform: translateX(0)
     }
 }
 
@@ -47,9 +47,11 @@ $alpha: .7;
 
 .fade {
     &-right {
+        display: inline-block;
         animation: fadeRight 1s ease-out;
     }
     &-left {
+        display: inline-block;
         animation: fadeLeft 1s ease-out;
     }
 }
