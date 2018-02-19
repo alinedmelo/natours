@@ -43,8 +43,8 @@
   position: absolute;
   top: 3rem;
   left: 3rem; }
-  .logo-box .logo {
-    width: 8rem; }
+  .logo-box > .logo {
+    width: 6rem; }
 
 .hero-box {
   /* position/top/left - relative to the parent */
@@ -55,17 +55,19 @@
   /* Relative to element itself */
   text-align: center;
   font-size: 15px; }
-  .hero-box .text {
-    display: block;
+  .hero-box > .text {
     line-height: 1.5em;
     margin-bottom: 5rem;
     color: #fff;
     text-transform: uppercase; }
-    .hero-box .text-main {
+    .hero-box > .text-main {
+      display: block;
       font-size: 6rem;
+      line-height: 8rem;
       font-weight: 400;
       letter-spacing: 3.5rem; }
-    .hero-box .text-sub {
+    .hero-box > .text-sub {
+      display: block;
       font-size: 2rem;
       font-weight: 700;
       letter-spacing: 1.7rem; }
