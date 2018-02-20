@@ -1,8 +1,17 @@
 body {
-    padding: 2rem;
-    line-height: 1.3rem;
-    box-sizing: border-box;
+    line-height: 110%rem;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: $grey;
+}
+
+.heading-primary {
+    display: inline-block;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: transparent;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
 }

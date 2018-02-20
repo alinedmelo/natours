@@ -1,17 +1,19 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'abstracts/functions';
+@import 'settings/variables';
+
+@import 'tools/functions';
+@import 'tools/mixins';
+
+@import 'generic/reset';
 
 @import 'base/base';
 @import 'base/animations';
 @import 'base/typography';
-@import 'base/utilities';
 
-@import 'layout/header';
+@import 'components/buttons';
+@import 'components/hero-heading';
+
 @import 'layout/footer';
 @import 'layout/grid';
-
-@import 'components/hero-heading';
-@import 'components/buttons';
+@import 'layout/header';
 
 @import 'pages/home';

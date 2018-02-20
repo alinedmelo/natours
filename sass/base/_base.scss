@@ -1,32 +1,9 @@
-/* RESET CSS */
-*, 
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
 html {
     // defines 1rem size setting
     font-size: 62.5%;
 }
 
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+body {
+    padding: 2rem;
+    box-sizing: border-box;
 }
