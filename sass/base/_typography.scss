@@ -1,17 +1,29 @@
 body {
     line-height: 110%rem;
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: $grey;
 }
 
-.heading-primary {
-    display: inline-block;
-    font-size: 3.5rem;
-    text-transform: uppercase;
+.heading-h1 {
+    @include font-heading;
+    font-size: 4.2rem;
     color: transparent;
-    font-weight: 700;
     background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.heading-h2 {
+    @include font-heading;
+    font-size: 3.2rem;
+    color: transparent;
+    background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.heading-h3 {
+    @include font-heading;
+    font-size: 1.8rem;
+    color: $secondary-color;
 }

@@ -1,6 +1,5 @@
 .row {
-    width: 100%;
-    margin: $gutter-vertical 0;
+    margin: $gutter-vertical;
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -10,8 +9,7 @@
 
     [class^='col-'] { 
         float: left;   
-        padding: $small-padding;
-        background-color: $light-grey;
+        padding: $padding-small;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }

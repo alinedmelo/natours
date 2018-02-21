@@ -46,4 +46,8 @@
         display: inline-block;
         animation: fadeLeft 1s ease-out;
     }
+    &-bottom {
+        animation: fadeBottom .5s ease-out .7s;
+        animation-fill-mode: backwards;
+    }
 }
