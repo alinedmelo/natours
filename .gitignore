@@ -1,1 +1,6 @@
+# NODE #
 node_modules
+
+# Sass #
+.sass-cache
+*.map

@@ -1,0 +1,32 @@
+html {
+    // defines 1rem size setting (10px)
+    font-size: 62.5%;
+}
+
+body {    
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    line-height: $line-height;
+    margin-bottom: $margin-small;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+}
+
+p {
+    margin-bottom: $margin-small;
+    font-family: 'Raleway', sans-serif;
+}
+
+p, 
+span, 
+li {
+    font-size: 1.7rem;
+    line-height: $line-height;
+}

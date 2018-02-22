@@ -1,0 +1,21 @@
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin font-heading {
+    display: inline-block;
+    letter-spacing: $letter-spacing;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
