@@ -38,12 +38,12 @@ a {
   font-size: 100%; }
 
 p {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  font-family: 'Raleway', sans-serif; }
 
 p,
 span,
 li {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.7rem;
   line-height: 2.8rem; }
 
@@ -200,9 +200,10 @@ body {
     content: '';
     width: 100%;
     transition: all .3s ease-out; }
-  .btn-link:hover i {
-    margin-left: .5rem;
-    transition: all .3s ease-out; }
+
+.btn-link:active i {
+  margin-left: .5rem;
+  transition: all .3s ease-out; }
 
 .heading-hero {
   position: absolute;
@@ -211,21 +212,51 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 15px; }
-  .heading-hero .text {
+  .heading-hero > .text {
     display: block;
     margin-bottom: 5rem;
     color: #fff;
     text-transform: uppercase; }
-    .heading-hero .text-main {
-      font-size: 6rem;
-      line-height: 150%;
-      font-weight: 400;
-      letter-spacing: 3.5rem; }
-    .heading-hero .text-sub {
-      font-size: 2rem;
-      line-height: 110%;
-      font-weight: 700;
-      letter-spacing: 1.7rem; }
+  .heading-hero > .text .text-main {
+    font-size: 6rem;
+    line-height: 150%;
+    font-weight: 400;
+    letter-spacing: 3.5rem; }
+  .heading-hero > .text .text-sub {
+    font-size: 2rem;
+    line-height: 110%;
+    font-weight: 700;
+    letter-spacing: 1.7rem; }
+
+.figures-sort {
+  position: relative; }
+  .figures-sort > .photo {
+    transition: all .2s ease-out;
+    border-radius: 5px;
+    position: absolute;
+    width: 60%;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    outline-offset: -1.5rem; }
+    .figures-sort > .photo-first {
+      top: 0;
+      left: 0; }
+    .figures-sort > .photo-second {
+      top: 5rem;
+      right: 0; }
+    .figures-sort > .photo-last {
+      top: 15rem;
+      left: 20%; }
+    .figures-sort > .photo:hover {
+      transform: scale(1.2) translateY(-5px);
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+      transition: all .2s ease-out;
+      z-index: 1;
+      outline: 2px solid rgba(238, 238, 238, 0.5);
+      -webkit-filter: contrast(130%);
+      filter: contrast(130%); }
+  .figures-sort:hover > .photo:not(:hover) {
+    transform: scale(0.95); }
 
 .row {
   margin: 6rem; }
@@ -262,14 +293,14 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
-  .header .logo-box {
+  .header > .logo-box {
     position: absolute;
     top: 3rem;
     left: 3rem; }
-    .header .logo-box .logo {
+    .header > .logo-box > .logo {
       width: 6rem;
       transition: all .4s ease-out; }
-      .header .logo-box .logo:hover {
+      .header > .logo-box > .logo:hover {
         transform: scale(1.1);
         transition: all .4s ease-out; }
 
