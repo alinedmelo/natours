@@ -310,15 +310,14 @@ body {
   padding: 3rem;
   background-color: rgba(247, 247, 247, 0.8);
   text-align: center; }
-
-.icon-boxes .icon {
-  display: block;
-  font-size: 8rem;
-  margin: 3rem 0;
-  color: transparent;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text;
-  background-clip: text; }
+  .icon-boxes .box > .icon {
+    display: block;
+    font-size: 8rem;
+    margin: 3rem 0;
+    color: transparent;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    background-clip: text; }
 
 .row {
   margin: 6rem; }
