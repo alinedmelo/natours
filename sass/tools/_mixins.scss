@@ -19,3 +19,10 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+
+@mixin gradient-text ($start-color, $end-color) {
+    color: transparent;
+    background-image: linear-gradient(to right, $start-color, $end-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+}

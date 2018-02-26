@@ -7,23 +7,16 @@ body {
 .heading-h1 {
     @include font-heading;
     font-size: 4.2rem;
-    color: transparent;
-    background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
-    -webkit-background-clip: text;
-    background-clip: text;
+    @include gradient-text($primary-color-light, $primary-color-dark);
 }
 
 .heading-h2 {
     @include font-heading;
     font-size: 3.2rem;
-    color: transparent;
-    background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
-    -webkit-background-clip: text;
-    background-clip: text;
+    @include gradient-text($primary-color-light, $primary-color-dark);
 }
 
-.heading-h3 {
-    @include font-heading;
+.heading-h3 { @include font-heading;
     font-size: 1.8rem;
     color: $secondary-color;
 }
