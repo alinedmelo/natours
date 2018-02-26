@@ -2,7 +2,28 @@
 
 ._center { text-align: center !important; }
 
-._margin { margin: $margin; }
-._margin-small { margin: $margin-small; }
-._margin-large { margin: $margin-large; }
-._margin-none { margin: 0; }
+// Margins //
+._margin        { @extend %margin; }
+._no-margin     { @extend %no-margin; }
+._margin-small  { @extend %margin-small; }
+._margin-large  { @extend %margin-large; }
+
+._margin-small-top     { @extend %margin-small-top; }
+._margin-small-bottom  { @extend %margin-small-bottom; }
+
+._margin-remove         { @extend %no-margin; }
+._margin-remove-top     { @extend %no-margin-top; }
+._margin-remove-bottom  { @extend %no-margin-bottom; }
+
+// Paddings //
+._padding               { @extend %padding; }
+._padding-small         { @extend %padding-small; }
+._padding-large         { @extend %padding-large; }
+._no-padding            { @extend %no-padding; }
+
+._padding-small-top     { @extend %padding-small-top; }
+._padding-small-bottom  { @extend %padding-small-bottom; }
+
+._padding-remove        { @extend %no-padding; }
+._padding-remove-top    { @extend %no-padding-top; }
+._padding-remove-bottom { @extend %no-padding-bottom; }

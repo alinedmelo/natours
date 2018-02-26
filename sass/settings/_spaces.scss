@@ -3,7 +3,34 @@ $padding: 6rem;
 $padding-small: 3rem;
 $padding-large: 9rem;
 
-
 $margin: 6rem;
 $margin-small: 3rem;
 $margin-large: 9rem;
+
+$directions: top, right, bottom, left;
+
+// Margin Placeholders //
+%margin         { margin: $margin; }
+%margin-small   { margin: $margin / 2; }
+%margin-large   { margin: $margin * 2; }
+%no-margin      { margin: 0; }
+
+@each $direction in $directions {
+    
+    %margin-small-#{$direction}     { margin-#{$direction}: $margin / 2; }
+    %margin-large-#{$direction}     { margin-#{$direction}: $margin * 2; }
+    %no-margin-#{$direction}        { margin-#{$direction}: 0; }
+}
+
+// Padding Placeholders //
+%padding        { padding: $padding; }
+%no-padding     { padding: 0; }
+%padding-small  { padding: $padding / 2; }
+%padding-large  { padding: $padding * 2; }
+
+@each $direction in $directions {
+    
+    %padding-small-#{$direction}   { padding-#{$direction}: $padding / 2; }
+    %padding-large-#{$direction}    { padding-#{$direction}: $padding * 2; }
+    %no-padding-#{$direction}       { padding-#{$direction}: 0; }
+}
