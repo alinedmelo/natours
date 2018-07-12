@@ -1,3 +1,5 @@
+@import 'generic/reset';
+
 @import 'settings/colors';
 @import 'settings/grid';
 @import 'settings/spaces';
@@ -5,8 +7,6 @@
 
 @import 'tools/functions';
 @import 'tools/mixins';
-
-@import 'generic/reset';
 
 @import 'base/base';
 @import 'base/animations';
